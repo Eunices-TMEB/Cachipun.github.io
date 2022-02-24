@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&family=Roboto:wght@100;300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+  
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+h1{
+    color: rgba(209, 63, 153, 0.822);
+    font-size: 3em;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#portada {
+  max-width: 30%;
+  margin-bottom: 20%;
+}
+
+@media (max-width: 990px) {
+  #portada {
+    max-width: 40%;
+  }
+}
+
+
+.container-all,
+.gameInicial {
+  height: 90vh;
+  width: 90%;
+  border-radius: 10px;
+  background-repeat: repeat;
+  background-size: 70%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.container-log {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+@media (max-width: 990px) {
+  .login-container {
+    width: 90%;
+  }
+}
+.login-box h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+  }
+  
+  .login-box label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .login-box input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .login-box input[type="text"], .login-box input[type="password"] {
+    border: none;
+    border-bottom: 1px solid rgb(192, 160, 180);
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: rgba(105, 29, 76, 0.822);
+    font-size: 16px;
+  }
+  
+  .login-box [type="button"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: rgba(209, 63, 153, 0.822);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+
+
+
+h2 {
+  font-size: 1rem;
+  color: rgba(209, 63, 153, 0.822);
+  font-family: "Nunito", sans-serif;
+}
+
+.login-box {
+    width: 550px;
+    height: 380px;
+    background: rgba(209, 63, 153, 0.342);
+    color: rgba(209, 63, 153, 0.822);
+    border-radius: 10px;
+    margin-bottom: 1%;
+    top: 70%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 15px 30px ;
+    font-family: 'Bebas Neue', cursive;
+  }
+
+  .login-box a {
+      display: flex;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgba(128, 35, 92, 0.822);
+  }
+  
+  .login-box a:hover {
+    color: #fff;
+  }
+
+.textLogin {
+  font-size: 1rem;
+  color: #252526;
+}
+
+.inputLogin {
+  margin: 0.5rem 0;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: 15rem;
+}
+
+#btnLogin {
+  width: 15rem;
+  background: rgba(209, 63, 153, 0.822);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  margin-left: 7rem;
+  cursor: pointer;
+  
+}
+
+#btnLogin:hover {
+  background: #cf8381;
+}
+
+.title-game{
+ 
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  font-size: 1.8rem;
+  font-family: 'Bebas Neue', cursive;
+  color:rgb(97, 25, 65);
+  font-weight: 200;
+  
+}
+
+.btn-selection {
+  width: 10rem;
+  background: rgba(209, 63, 153, 0.822);
+  border: 1px dotted black;
+  box-shadow: rgba(0, 0, 0, 1);
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.btn-selection:hover {
+  background: rgba(224, 142, 193, 0.822);
+}
+
+.btn-selection:disabled {
+  background: #000000;
+  cursor: not-allowed;
+}
+
+#usuario,
+#artificial {
+  width: 100px;
+}
+
+#result {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  font-size: 2rem;
+  color: rgba(209, 63, 153, 0.822);
+  font-family: 'Bebas Neue', cursive;
+}
+
+#close-session{
+  width: 15rem;
+  background: rgba(209, 63, 153, 0.822);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+#close-session:hover{
+  width: 15rem;
+  height: 3rem;
+  background: rgba(209, 158, 190, 0.822);
+  border: 1px dotted black;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.all-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-row,
+.center-row {
+  width: 100%;
+}
+
+.bottom-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#counter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  height: 2.5rem;
+  background: #fef1e6ad;
+  margin: 1rem 0;
+  border-radius: 10px;
+}
+
+#list-score {
+  color: rgba(209, 63, 153, 0.822);
+}
+
+ol > li {
+  margin: 0.25rem 0;
+}
+
+footer {
+  margin-top: 3rem;
+  font-size: 0.85rem;
+  text-align: center;
+  color: rgba(209, 63, 153, 0.822);
+}
+
+#container-all {
+  display: block;
+}
+
+#gameInicial {
+  display: none;
+}
+ 
+
+

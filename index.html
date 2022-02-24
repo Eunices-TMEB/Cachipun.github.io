@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piedra, papel o tijeras</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- LOGIN -->
+    <section>
+      <div id="container-all" class="container-all">
+        <div class="container-log">
+          <h1>BIENVENIDO AL CACHIPUM</h1>
+          <img id="portada" src="Images/all.jpg" />
+          <div class="login-box">
+            <form id="loginUsuarios">
+              <label for="user" class="textLogin">Usuario:</label><br />
+              <input
+                placeholder="Ingresa tu usuario"
+                type="text"
+                id="userLogin"
+                class="inputLogin"
+              /><br />
+              <label for="password" class="textLogin">Contraseña:</label><br />
+              <input
+                placeholder="Ingresa tu contraseña"
+                type="password"
+                id="passwordLogin"
+                class="inputLogin"
+              /><br />
+              <button type="submit" id="btnLogin">Login</button>
+              <a href="#">In: Enkara</a>
+              <a href="#">Pass: Enkara</a>
+            </form>
+          </div>
+          <footer>&copy;2022 JavaScript-Master 'EUNICES TRUJILLO'.</footer>
+        </div>
+      </div>
+    </section>
+
+    <!-- GAME -->
+    <section>
+      <div id="gameInicial" class="gameInicial">
+        <div class="container-log">
+          <div class="all-container">
+            <div class="top-row">
+              <div class="title-game">
+                <p>USUARIO</p>
+                <p>IA MACHINE</p>
+              </div>
+              <div id="result">
+                <img src="Images/papel.jpg" id="usuario" />
+                <p id="resultText">¿JUGAMOS?</p>
+                <p id="score"></p>
+                <img src="Images/papel.jpg" id="artificial" />
+              </div>
+            </div>
+            <div class="center-row">
+              <button
+                id="piedraUser"
+                data-option="piedra"
+                class="game-option btn-selection"
+              >
+                Piedra
+              </button>
+              <button
+                id="papelUser"
+                data-option="papel"
+                class="game-option btn-selection"
+              >
+                Papel
+              </button>
+              <button
+                id="tijeraUser"
+                data-option="tijera"
+                class="game-option btn-selection"
+              >
+                Tijera
+              </button>
+            </div>
+            <div class="bottom-row">
+              <h1>PUNTAJE</h1>
+              <div id="counterContainer"></div>
+              <h2>Últimas jugadas</h2>
+              <ol id="list-score"></ol>
+              <button id="close-session">Cerrar sesión</button>
+            </div>
+          </div>
+          <footer>&copy;2022 JavaScript-Master 'EUNICES TRUJILLO'.</footer>
+        </div>
+      </div>
+    </section>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
